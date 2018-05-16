@@ -6,6 +6,7 @@ app.config(function($routeProvider, $locationProvider) {
         templateUrl: 'templates/home.html',
         controller: 'FirstController',
     })
+    
     .when('/sign-up', {
         templateUrl: 'templates/sign-up.html',
         controller: 'SignUpController'
