@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="App">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Best Wish</title>
+</head>
+
+<body>
+    
+    <nav ng-controller="AuthCtrl">
+        <button class="SignInFacebook">
+            <a href="#!/">Home</a>
+        </button>
+
+        <button class="SignInFacebook">
+            <a href="#!/sign-up">Sign up</a>
+        </button>
+      
+
+    </nav>
+
+    <div ng-view></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.6.9/angular-route.js"></script>
+<!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/3.6.6/firebase.js"></script>
+
+<!-- AngularFire -->
+<script src="https://cdn.firebase.com/libs/angularfire/2.3.0/angularfire.min.js"></script>
+
+    <script src="app.js"></script>
+    <script src="controllers.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBbEaiveq2ys2DQpEVqyLy-tT2JhMIpsRY",
+          authDomain: "facebook-6e708.firebaseapp.com",
+          databaseURL: "https://facebook-6e708.firebaseio.com",
+          projectId: "facebook-6e708",
+          storageBucket: "",
+          messagingSenderId: "369826066221"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+</body>
+
+</html>
